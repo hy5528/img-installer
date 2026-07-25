@@ -9,7 +9,7 @@ on:
         default: "armbian-ubuntu24_minimal"
         type: choice
         options:
-          - "standard"
+          - "armbian-standard"
           - "armbian-debian13_minimal"
           - "armbian-ubuntu24_minimal"
           - "armbian-homeassistant_debian12_minimal"
