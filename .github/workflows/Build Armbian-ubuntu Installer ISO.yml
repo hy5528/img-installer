@@ -9,8 +9,6 @@ on:
         default: "ubuntu24_minimal"
         type: choice
         options:
-          - "standard"
-          - "debian13_minimal"
           - "ubuntu24_minimal"
        
 
