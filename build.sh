@@ -3,14 +3,14 @@ mkdir -p armbian
 
 # 读取环境变量 (带默认值)
 VERSION_TYPE="${VERSION_TYPE:-standard}"
-if [ "$VERSION_TYPE" = "debian13_minimal" ]; then
+if [ "$VERSION_TYPE" = "armbian-debian13_minimal" ]; then
   echo "构建debian13_minimal-armbian..."
   FILE_NAME="Armbian_26.5.1_Uefi-x86_trixie_current_6.18.32_minimal.img.xz"
 elif [ "$VERSION_TYPE" = "ubuntu24_minimal" ]; then
-  echo "构建ubuntu24_minimal-armbian..." 
+  echo "构建armbian-ubuntu24_minimal-armbian..." 
   FILE_NAME="Armbian_26.5.1_Uefi-x86_noble_current_6.18.32_minimal.img.xz"
 elif [ "$VERSION_TYPE" = "homeassistant_debian12_minimal" ]; then
-  echo "构建homeassistant全家桶版armbian..." 
+  echo "构建armbian-homeassistant全家桶版armbian..." 
   FILE_NAME="Armbian_25.8.2_Uefi-x86_bookworm_current_6.12.48-homeassistant_minimal.img.xz"
 elif [ "$VERSION_TYPE" = "DietPi-debian13" ]; then
   echo "构建DietPid-ebian13..."
