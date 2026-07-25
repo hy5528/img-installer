@@ -23,7 +23,12 @@ echo Install packages
 apt-get install -y --no-install-recommends linux-image-amd64 live-boot systemd-sysv
 apt-get install -y parted openssh-server bash-completion cifs-utils curl dbus dosfstools firmware-linux-free gddrescue gdisk iputils-ping isc-dhcp-client less network-manager nfs-common ntfs-3g openssh-server openssh-client open-vm-tools procps vim wimtools wget
 
-curl -fsSL https://get.docker.com -o get-docker.sh
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+apt-get install -y  docker-ce docker-ce-cli containerd.io docker-build
 curl -L "https://github.com/docker/compose/releases/download/v5.3.1/docker-compose-linux-x86_64" -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 
