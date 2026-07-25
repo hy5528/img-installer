@@ -2,7 +2,7 @@
 mkdir -p armbian
 
 # 读取环境变量 (带默认值)
-VERSION_TYPE="${VERSION_TYPE:-ubuntu24}"
+VERSION_TYPE="${VERSION_TYPE:-standard}"
 if [ "$VERSION_TYPE" = "armbian-debian13_minimal" ]; then
   echo "构建debian13_minimal-armbian..."
   FILE_NAME="Armbian_26.5.1_Uefi-x86_trixie_current_6.18.32_minimal.img.xz"
@@ -19,7 +19,7 @@ elif [ "$VERSION_TYPE" = "armbian-ubuntu24" ]; then
   echo "构建armbian-ubuntu24..."
   FILE_NAME="Armbian_25.2.1_Uefi-x86_noble_current_6.12.13.img.xz"
 else 
-  echo "构建ubuntu24..."
+  echo "构建standard-armbian..."
   FILE_NAME="Armbian_25.2.1_Uefi-x86_noble_current_6.12.13.img.xz"
 fi
 
