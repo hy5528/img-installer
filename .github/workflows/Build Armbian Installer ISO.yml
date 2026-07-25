@@ -1,4 +1,4 @@
-name: "Build Armbian Installer ISO"
+tant_debian1uild Armbian Installer ISO"
 
 on:
   workflow_dispatch:
@@ -38,7 +38,7 @@ jobs:
           fi
 
           if [ "$VERSION_TYPE" = "homeassistant_debian13" ]; then
-            mv output/armbian-installer-x86_64-standard.iso output/armbian-installer-x86_64-homeassistant_debian13.iso
+            mv output/armbian-installer-x86_64-standard.iso output/armbian-installer-x8-homeassistant_debian12_minimal.iso
           fi
           
 
