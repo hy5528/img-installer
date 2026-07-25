@@ -10,7 +10,7 @@ on:
         type: choice
         options:
           - "standard"
-          - "debian12_minimal"
+          - "debian13_minimal"
           - "ubuntu24_minimal"
           - "homeassistant_debian12_minimal"
 
