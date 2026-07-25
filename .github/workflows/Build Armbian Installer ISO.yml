@@ -13,6 +13,7 @@ on:
           - "debian13_minimal"
           - "ubuntu24_minimal"
           - "homeassistant_debian12_minimal"
+          - "DietPi_NativePC-UEFI"
 
 jobs:
   build-release:
@@ -37,6 +38,10 @@ jobs:
             mv output/armbian-installer-x86_64-standard.iso output/armbian-installer-x86_64-ubuntu24_minimal.iso
           fi
 
+          if [ "$VERSION_TYPE" = "DietPi_NativePC-UEFI" ]; then
+            mv output/armbian-installer-x86_64-standard.iso output/DietPi_NativePC-installer-UEFI-x86_64-debian13.iso
+          fi
+          
           if [ "$VERSION_TYPE" = "homeassistant_debian12_minimal" ]; then
             mv output/armbian-installer-x86_64-standard.iso output/armbian-installer-x86_64-homeassistant_debian12_minimal.iso
           fi
