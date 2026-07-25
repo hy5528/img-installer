@@ -12,7 +12,7 @@ elif [ "$VERSION_TYPE" = "ubuntu24_minimal" ]; then
 elif [ "$VERSION_TYPE" = "homeassistant_debian12_minimal" ]; then
   echo "构建armbian-homeassistant全家桶版armbian..." 
   FILE_NAME="Armbian_25.8.2_Uefi-x86_bookworm_current_6.12.48-homeassistant_minimal.img.xz"
-elif [ "$VERSION_TYPE" = "DietPi-debian13" ]; then
+elif [ "$VERSION_TYPE" = "DietPi_debian13" ]; then
   echo "构建DietPid-ebian13..."
   FILE_NAME="DietPi_NativePC-UEFI-x86_64-Trixie.img.xz"
 else 
