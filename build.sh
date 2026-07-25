@@ -16,7 +16,7 @@ elif [ "$VERSION_TYPE" = "DietPi_debian13" ]; then
   echo "构建DietPi_debian13..."
   FILE_NAME="DietPi_NativePC-UEFI-x86_64-Trixie.img.xz"
 else 
-  echo "构建armbian-standard..."
+  echo "构建armbian-ubuntu24..."
   FILE_NAME="Armbian_25.2.1_Uefi-x86_noble_current_6.12.13.img.xz"
 fi
 
