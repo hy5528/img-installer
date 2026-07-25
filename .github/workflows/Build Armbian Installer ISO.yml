@@ -41,6 +41,10 @@ jobs:
           if [ "$VERSION_TYPE" = "DietPi_debian13" ]; then
             mv output/armbian-installer-x86_64-standard.iso output/DietPi_debian13-installer-x86_64.iso
           fi
+
+          if [ "$VERSION_TYPE" = "armbian-ubuntu24" ]; then
+            mv output/armbian-installer-x86_64-standard.iso output/armbian-ubuntu24-installer-x86_64.iso
+          fi
           
           if [ "$VERSION_TYPE" = "armbian-homeassistant_debian12_minimal" ]; then
             mv output/armbian-installer-x86_64-standard.iso output/armbian-homeassistant_debian12_minimal-installer-x86_64.iso
