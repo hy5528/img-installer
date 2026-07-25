@@ -37,7 +37,7 @@ jobs:
             mv output/armbian-installer-x86_64-standard.iso output/armbian-installer-x86_64-ubuntu24_minimal.iso
           fi
 
-          if [ "$VERSION_TYPE" = "homeassistant_debian13" ]; then
+          if [ "$VERSION_TYPE" = "homeassistant_debian12_minimal" ]; then
             mv output/armbian-installer-x86_64-standard.iso output/armbian-installer-x8-homeassistant_debian12_minimal.iso
           fi
           
