@@ -30,20 +30,20 @@ jobs:
       - name: "Prepare Release Assets"
         run: |
           # 根据版本类型重命名ISO文件
-          if [ "$VERSION_TYPE" = "debian13_minimal" ]; then
+          if [ "$VERSION_TYPE" = "armbian-debian13_minimal" ]; then
             mv output/armbian-installer-x86_64-standard.iso output/armbian-installer-x86_64-debian13_minimal.iso
           fi
 
-          if [ "$VERSION_TYPE" = "ubuntu24_minimal" ]; then
-            mv output/armbian-installer-x86_64-standard.iso output/armbian-installer-x86_64-ubuntu24_minimal.iso
+          if [ "$VERSION_TYPE" = "armbian-ubuntu24_minimal" ]; then
+            mv output/armbian-installer-x86_64-standard.iso output/armbian-ubuntu24_minimal-installer-x86_64.iso
           fi
 
           if [ "$VERSION_TYPE" = "DietPi_debian13" ]; then
-            mv output/armbian-installer-x86_64-standard.iso output/armbian-installer-x86_64-DietPi_debian13.iso
+            mv output/armbian-installer-x86_64-standard.iso output/DietPi_debian13-installer-x86_64.iso
           fi
           
-          if [ "$VERSION_TYPE" = "homeassistant_debian12_minimal" ]; then
-            mv output/armbian-installer-x86_64-standard.iso output/armbian-installer-x86_64-homeassistant_debian12_minimal.iso
+          if [ "$VERSION_TYPE" = "armbian-homeassistant_debian12_minimal" ]; then
+            mv output/armbian-installer-x86_64-standard.iso output/armbia-homeassistant_debian12_minimal-installer-x86_64.iso
           fi
           
 
@@ -53,5 +53,5 @@ jobs:
           tag_name: "Armbian-Installer-x86_64-ISO"
           body_path: ${{ github.workspace }}/info.md
           files: |
-            output/armbian-installer-x86_64-${{ github.event.inputs.version_type }}.iso
+            output/${{ github.event.inputs.version_type }}-installer-x86_64.iso
           token: ${{ secrets.GITHUB_TOKEN }}
