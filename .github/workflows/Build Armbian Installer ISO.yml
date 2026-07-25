@@ -12,7 +12,7 @@ on:
           - "standard"
           - "debian13_minimal"
           - "ubuntu24_minimal"
-          - "homeassistant_debian13"
+          - "homeassistant_debian12_minimal"
 
 jobs:
   build-release:
@@ -38,7 +38,7 @@ jobs:
           fi
 
           if [ "$VERSION_TYPE" = "homeassistant_debian12_minimal" ]; then
-            mv output/armbian-installer-x86_64-standard.iso output/armbian-installer-x8-homeassistant_debian12_minimal.iso
+            mv output/armbian-installer-x86_64-standard.iso output/armbian-installer-x86_64-homeassistant_debian12_minimal.iso
           fi
           
 
