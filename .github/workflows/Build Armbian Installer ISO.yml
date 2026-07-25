@@ -31,7 +31,7 @@ jobs:
         run: |
           # 根据版本类型重命名ISO文件
           if [ "$VERSION_TYPE" = "armbian-debian13_minimal" ]; then
-            mv output/armbian-installer-x86_64-standard.iso output/armbian-debian13_minimal_minimal-installer-x86_64.iso
+            mv output/armbian-installer-x86_64-standard.iso output/armbian-debian13_minimal-installer-x86_64.iso
           fi
 
           if [ "$VERSION_TYPE" = "armbian-ubuntu24_minimal" ]; then
