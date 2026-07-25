@@ -14,7 +14,7 @@ elif [ "$VERSION_TYPE" = "homeassistant_debian13" ]; then
   FILE_NAME="Armbian_26.2.1_Uefi-x86_trixie_current_6.18.10-homeassistant.img.xz"
 else 
   echo "构建standard-armbian..."
-  FILE_NAME="Armbian_25.2.1_Uefi-x86_noble_current_6.12.13.img.xz"
+  FILE_NAME="Armbian_26.08.0-trunk_noble_amd64_6.18.38.img.gz"
 fi
 
 REPO="hy5528/img-installer"
