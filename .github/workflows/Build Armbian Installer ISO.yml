@@ -39,7 +39,7 @@ jobs:
           fi
 
           if [ "$VERSION_TYPE" = "DietPi" ]; then
-            mv output/armbian-installer-x86_64-standard.iso output/DietPi_NativePC-installer-UEFI-x86_64-debian13.iso
+            mv output/armbian-installer-x86_64-standard.iso output/DietPi-installer-NativePC-UEFI-x86_64-debian13.iso
           fi
           
           if [ "$VERSION_TYPE" = "homeassistant_debian12_minimal" ]; then
