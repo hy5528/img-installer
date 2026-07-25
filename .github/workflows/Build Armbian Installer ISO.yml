@@ -43,7 +43,7 @@ jobs:
           fi
           
           if [ "$VERSION_TYPE" = "armbian-homeassistant_debian12_minimal" ]; then
-            mv output/armbian-installer-x86_64-standard.iso output/armbia-homeassistant_debian12_minimal-installer-x86_64.iso
+            mv output/armbian-installer-x86_64-standard.iso output/armbian-homeassistant_debian12_minimal-installer-x86_64.iso
           fi
           
 
