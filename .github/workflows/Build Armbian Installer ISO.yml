@@ -12,7 +12,7 @@ on:
           - "standard"
           - "debian13_minimal"
           - "ubuntu24_minimal"
-          - "homeassistant_debian12_minimal"
+          - "homeassistant_debian13"
 
 jobs:
   build-release:
