@@ -23,9 +23,6 @@ echo Install packages
 apt-get install -y --no-install-recommends linux-image-amd64 live-boot systemd-sysv
 apt-get install -y parted openssh-server bash-completion cifs-utils curl dbus dosfstools firmware-linux-free gddrescue gdisk iputils-ping isc-dhcp-client less network-manager nfs-common ntfs-3g openssh-client open-vm-tools procps vim wimtools wget
 
-curl -L "https://github.com/docker/compose/releases/download/v5.3.1/docker-compose-linux-x86_64" -o /usr/local/bin/docker-compose
-chmod +x /usr/local/bin/docker-compose
-
 echo Clean apt post-install
 apt-get clean
 
