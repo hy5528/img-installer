@@ -15,6 +15,9 @@ elif [ "$VERSION_TYPE" = "homeassistant_debian12_minimal" ]; then
 else 
   echo "构建standard-armbian..."
   FILE_NAME="Armbian_25.2.1_Uefi-x86_noble_current_6.12.13.img.xz"
+else 
+  echo "构建standard-armbian..."
+  FILE_NAME="Armbian_25.2.1_Uefi-x86_noble_current_6.12.13.img.xz"
 fi
 
 REPO="hy5528/img-installer"
