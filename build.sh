@@ -16,7 +16,7 @@ else
   echo "构建standard-armbian..."
   FILE_NAME="Armbian_25.2.1_Uefi-x86_noble_current_6.12.13.img.xz"
 else 
-  echo "构建DietPi_NativePC..."
+  echo "构建DietPi..."
   FILE_NAME="DietPi_NativePC-UEFI-x86_64-Trixie.img.xz"
 fi
 
