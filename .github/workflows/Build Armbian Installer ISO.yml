@@ -58,7 +58,7 @@ jobs:
           
 
       - name: "Publish"
-        uses: softprops/action-gh-release@v2.2.1
+        uses: softprops/action-gh-release@v3.0.2
         with:
           tag_name: "Armbian-Installer-x86_64-ISO"
           body_path: ${{ github.workspace }}/info.md
