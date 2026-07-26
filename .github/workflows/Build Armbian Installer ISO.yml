@@ -14,7 +14,8 @@ on:
           - "armbian-ubuntu24_minimal"
           - "armbian-homeassistant_debian12_minimal"
           - "DietPi_debian13"
-
+          - "armbian-ubuntu26_minimal"
+         
 jobs:
   build-release:
     runs-on: ubuntu-22.04
@@ -38,6 +39,10 @@ jobs:
             mv output/armbian-installer-x86_64-standard.iso output/armbian-ubuntu24_minimal-installer-x86_64.iso
           fi
 
+          if [ "$VERSION_TYPE" = "armbian-ubuntu26_minimal" ]; then
+            mv output/armbian-installer-x86_64-standard.iso output/armbian-ubuntu26_minimal-installer-x86_64.iso
+          fi
+          
           if [ "$VERSION_TYPE" = "DietPi_debian13" ]; then
             mv output/armbian-installer-x86_64-standard.iso output/DietPi_debian13-installer-x86_64.iso
           fi
