@@ -21,12 +21,10 @@ update-locale LANG=en_US.UTF-8
 
 echo Install packages
 apt-get install -y --no-install-recommends linux-image-amd64 live-boot systemd-sysv
-apt-get install -y parted openssh-server alsa-utils bash-completion cifs-utils curl dbus dosfstools firmware-linux-free gddrescue gdisk iputils-ping isc-dhcp-client less nano nfs-common ntfs-3g openssh-client open-vm-tools procps sudo wimtools wget
+apt-get install -y parted openssh-server alsa-utils bash-completion cifs-utils curl dbus dosfstools firmware-linux-free gddrescue gdisk iputils-ping isc-dhcp-client less nano nfs-common ntfs-3g openssh-client open-vm-tools procps wimtools wget
 
-apt-get install -y ca-certificates gnupg lsb-release
-wget https://github.com/docker/docker-install/blob/master/install.sh
-chmod +x install.sh
-sh install.sh
+curl -fsSL https://get.docker.com -o get-docker.sh
+sh get-docker.sh
 
 echo Clean apt post-install
 apt-get clean
