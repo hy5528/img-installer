@@ -10,6 +10,7 @@ on:
         type: choice
         options:
           - "armbian-ubuntu24"
+          - "armbian-debian12_minimal"
           - "armbian-debian13_minimal"
           - "armbian-ubuntu24_minimal"
           - "armbian-ubuntu26_minimal"
