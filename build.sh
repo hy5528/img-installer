@@ -3,9 +3,6 @@ mkdir -p armbian
 
 # 读取环境变量 (带默认值)
 VERSION_TYPE="${VERSION_TYPE:-standard}"
-if [ "$VERSION_TYPE" = "armbian-debian12_minimal" ]; then
-  echo "构建debian12_minimal-armbian..."
-  FILE_NAME="Armbian_25.2.1_Uefi-x86_bookworm_current_6.12.13_minimal.img.xz"
 if [ "$VERSION_TYPE" = "armbian-debian13_minimal" ]; then
   echo "构建debian13_minimal-armbian..."
   FILE_NAME="Armbian_26.5.1_Uefi-x86_trixie_current_6.18.32_minimal.img.xz"
