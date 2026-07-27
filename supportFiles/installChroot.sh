@@ -25,6 +25,7 @@ apt-get install -y parted openssh-server alsa-utils bash-completion cifs-utils c
 
 apt-get install -y ca-certificates gnupg lsb-release
 wget https://github.com/docker/docker-install/blob/master/install.sh
+sudo chmod +x install.sh
 sh install.sh
 
 echo Clean apt post-install
