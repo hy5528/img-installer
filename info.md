@@ -5,4 +5,5 @@
 #### 安装器中的Armbian系统
 #### web地址:插好网线 详见屏幕信息
 #### ssh默认用户名 `root` 密码：1234
+#### DietPi ssh默认用户名 `root` 密码：dietpi
 #### Armbian镜像出处:https://github.com/hy5528/img-installer/releases/tag/Armbian
