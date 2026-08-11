@@ -15,10 +15,7 @@ on:
           - "armbian-ubuntu24_minimal"
           - "armbian-ubuntu26_minimal"
           - "armbian-homeassistant_debian12_minimal"
-          - "DietPi_debian13"
-         
-          
-          
+          - "DietPi_debian13"         
          
 jobs:
   build-release:
