@@ -16,7 +16,7 @@ on:
           - "armbian-ubuntu26_minimal"
           - "armbian-homeassistant_debian12_minimal"
           - "DietPi_debian13"
-          - "ZimaOS"
+         
           
           
          
@@ -53,10 +53,6 @@ jobs:
           
           if [ "$VERSION_TYPE" = "DietPi_debian13" ]; then
             mv output/armbian-installer-x86_64-standard.iso output/DietPi_debian13-installer-x86_64.iso
-          fi
-
-          if [ "$VERSION_TYPE" = "ZimaOS" ]; then
-            mv output/armbian-installer-x86_64-standard.iso output/ZimaOS-installer-x86_64.iso
           fi
           
           if [ "$VERSION_TYPE" = "armbian-ubuntu24" ]; then
