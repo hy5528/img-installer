@@ -21,6 +21,9 @@ elif [ "$VERSION_TYPE" = "armbian-homeassistant_debian12_minimal" ]; then
 elif [ "$VERSION_TYPE" = "DietPi_debian13" ]; then
   echo "构建DietPi_debian13..."
   FILE_NAME="DietPi_NativePC-UEFI-x86_64-Trixie.img.xz"
+elif [ "$VERSION_TYPE" = "ZimaOS" ]; then
+  echo "构建ZimaOS..."
+  FILE_NAME="zimaos-x86_64-1.7.0_installer.img"
 elif [ "$VERSION_TYPE" = "armbian-ubuntu24" ]; then
   echo "构建armbian-ubuntu24..."
   FILE_NAME="Armbian_25.2.1_Uefi-x86_noble_current_6.12.13.img.xz"
